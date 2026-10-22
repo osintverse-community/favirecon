@@ -23,7 +23,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/favirecon@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/favirecon@sha256:ff0e7efa454fdb15b0f5e2f2c3406b5eedc3759c762af94135da195cf5160bf3
   platforms: [linux/amd64, linux/arm64]
   command: ["favirecon", "-u", "{target}", "-s", "-j"]
   output_format: jsonl
